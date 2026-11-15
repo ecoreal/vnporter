@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# workspace 级 cargo 构建产物
+/target
+*.tsbuildinfo
