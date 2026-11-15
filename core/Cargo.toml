@@ -1,0 +1,13 @@
+[package]
+name = "vnporter-core"
+version = "0.1.0"
+edition = "2024"
+description = "PC 视觉小说 → 安卓 APK 移植流水线的纯 Rust 核心：引擎检测 + 五阶段骨架（不依赖 Tauri）"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+
+[dev-dependencies]
+tempfile = "3"

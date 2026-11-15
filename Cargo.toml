@@ -1,0 +1,12 @@
+[workspace]
+members = ["core", "src-tauri"]
+resolver = "2"
+
+# 工作区级 release 优化配置（自 src-tauri/Cargo.toml 上移：
+# 虚拟工作区下非根包内的 [profile.*] 会被 cargo 忽略并告警）
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = 3
+panic = "abort"
+strip = true
